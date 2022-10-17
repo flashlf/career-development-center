@@ -29,3 +29,48 @@
 .navbar-brand>.brand-caption>.caption{
     color: #9c9c9c
 }
+
+.bg-primary {
+  background-color: #00796B !important;
+}
+
+.bg-secondary {
+  background-color: #FFCA28 !important;
+}
+
+.bg-orange {
+  background-color: #FB8C00;
+}
+
+.bg-danger {
+  background-color: #D81B60 !important;
+}
+
+.text-primary {
+  color: #00796B !important;
+}
+
+.text-warning {
+  color: #FFCA28 !important;
+}
+
+.content {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.carousel-indicators {
+  justify-content: start;
+}
+
+.heading-1{
+  font-size: 70px;
+}
+
+.bg-light {
+  background-color: #EDF7F2 !important;
+}
+
+.bg-light-2 {
+  background-color: #8f919259 !important;
+}

@@ -17,5 +17,13 @@ Route::get('/', function () {
     return view('application/homepage');
 });
 
+Route::get('/lowongan', function () {
+  return view('application/jobs');
+});
+
+Route::get('/lowongan/detail', function () {
+  return view('application/jobdetail');
+});
+
 
 //Route::view('/homepage', 'application/test');
