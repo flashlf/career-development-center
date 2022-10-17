@@ -5,8 +5,8 @@
       <h4 class="fw-bold mt-2">Graphic designer</h4>
     </div>
     <div class="">
-      <div class="btn bg-orange rounded-circle text-white me-2"><i class="fas fa-pen-to-square fa-sm"></i></div>
-      <div class="btn bg-danger rounded-circle text-white"><i class="fas fa-trash fa-sm"></i></div>
+      <div class="btn bg-orange rounded-circle text-white me-2 py-3 px-3"><i class="fas fa-pen-to-square"></i></div>
+      <div class="btn bg-danger rounded-circle text-white py-3 px-3"><i class="fas fa-trash"></i></div>
     </div>
   </div>
   <div class="d-flex justify-content-between">
