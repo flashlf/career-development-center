@@ -15,6 +15,7 @@ class CreatePostJobsTable extends Migration
     {
         Schema::create('post_jobs', function (Blueprint $table) {
             $table->id();
+            $table->unsignedInteger('company_id')->nullable();
             $table->string('title', 128)->index();
             $table->string('desc', 4096);
             $table->string('benefit', 512);
@@ -24,6 +25,12 @@ class CreatePostJobsTable extends Migration
             $table->string('education_level');
             $table->datetime('created_date');
             $table->datetime('end_date');
+
+            $table->foreign('company_id')
+                  ->references('id')
+                  ->on('companies')
+                  ->onUpdate('cascade')
+                  ->nullOnDelete();
         });
     }
 

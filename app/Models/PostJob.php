@@ -24,4 +24,8 @@ class PostJob extends Model
 
     # Formating timestamps Eloquent by custom
     protected $dateFormat = 'YYYY-MM-DD hh24:mi:ss';
+
+    public function company() {
+        return $this->hasOne(Company::class, 'id', 'company_id');
+    }
 }
