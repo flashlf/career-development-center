@@ -10,4 +10,13 @@ class Company extends Model
     use HasFactory;
 
     public $timestamps = false;
+
+    protected $fillable = [
+        'name',
+        'field',
+        'employe',
+        'location'
+    ];
+
+    protected $guarded = ['id'];
 }
