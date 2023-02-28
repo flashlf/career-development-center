@@ -118,6 +118,11 @@
     <div class=""></div>
   </div>
 </div>
+@foreach ($data as $company)
+    <p>Company Name : {{$company->name}}</p>
+    <p>Specialization : {{$company->field}}</p><hr>
+@endforeach
+
 @endsection
 
 @include('layout.partials.jobform')

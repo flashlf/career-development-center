@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,9 +17,10 @@ Route::get('/', function () {
     return view('application/homepage');
 });
 
-Route::get('/lowongan', function () {
-  return view('application/jobs');
-});
+// Route::get('/lowongan', function () {
+//   return view('application/jobs');
+// });
+Route::get('/lowongan', [Controllers\Lowongan::class, 'show']);
 
 Route::get('/lowongan/detail', function () {
   return view('application/jobdetail');

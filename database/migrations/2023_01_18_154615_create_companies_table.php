@@ -17,7 +17,7 @@ class CreateCompaniesTable extends Migration
             $table->id();
             $table->string('name', 64);
             $table->string('field', 64)->nullable();
-            $table->tinyInteger('employee');
+            $table->smallInteger('employee');
             $table->string('location', 256);
         });
     }
