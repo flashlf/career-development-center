@@ -21,7 +21,7 @@ Route::get('/', function () {
 //   return view('application/jobs');
 // });
 Route::get('/lowongan', [Controllers\Lowongan::class, 'show']);
-
+Route::post('/lowongan', [Controllers\Lowongan::class, 'store']);
 Route::get('/lowongan/detail', function () {
   return view('application/jobdetail');
 });

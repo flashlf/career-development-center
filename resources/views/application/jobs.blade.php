@@ -118,6 +118,9 @@
     <div class=""></div>
   </div>
 </div>
+<?php
+    var_dump($dataFacade[0]->name);
+?>
 @foreach ($data as $company)
     <p>Company Name : {{$company->name}}</p>
     <p>Specialization : {{$company->field}}</p><hr>
