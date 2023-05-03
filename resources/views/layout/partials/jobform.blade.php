@@ -10,7 +10,7 @@
         </div>
       </div>
       <div class="modal-body">
-          <form method="post" action="{{ url("lowongan") }}">
+          <form method="post" action="{{ url('lowongan') }}">
             @csrf
           <div class="mb-3">
             <label for="recipient-name" class="col-form-label">Nama perusahaan</label>
@@ -88,25 +88,25 @@
             <div class="col">
               <div class="mb-3">
                 <div class="form-check mb-2">
-                  <input class="form-check-input" type="checkbox" value="SMA/SMK Sederajat" id="jobEducation" name="jobEducation">
+                  <input class="form-check-input" type="checkbox" value="SMA/SMK Sederajat" id="jobEducation" name="jobEducation[]">
                   <label class="form-check-label" for="jobEducation">
                     SMA/SMK Sederajat
                   </label>
                 </div>
                 <div class="form-check mb-2">
-                  <input class="form-check-input" type="checkbox" value="Diplomat 4" id="jobEducation" name="jobEducation">
+                  <input class="form-check-input" type="checkbox" value="Diplomat 4" id="jobEducation" name="jobEducation[]">
                   <label class="form-check-label" for="jobEducation">
                     Diplomat 4
                   </label>
                 </div>
                 <div class="form-check mb-2">
-                  <input class="form-check-input" type="checkbox" value="Strata 2" id="jobEducation" name="jobEducation">
+                  <input class="form-check-input" type="checkbox" value="Strata 2" id="jobEducation" name="jobEducation[]">
                   <label class="form-check-label" for="jobEducation">
                     Strata 2
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Profesional Bersertifikasi" id="jobEducation" name="jobEducation">
+                  <input class="form-check-input" type="checkbox" value="Profesional Bersertifikasi" id="jobEducation" name="jobEducation[]">
                   <label class="form-check-label" for="jobEducation">
                     Profesional bersertifikasi
                   </label>
@@ -115,25 +115,25 @@
             </div>
             <div class="col">
               <div class="form-check mb-2">
-                <input class="form-check-input" type="checkbox" value="Diplomat 3" id="jobEducation" name="jobEducation">
+                <input class="form-check-input" type="checkbox" value="Diplomat 3" id="jobEducation" name="jobEducation[]">
                 <label class="form-check-label" for="jobEducation">
                   Diplomat 3
                 </label>
               </div>
               <div class="form-check mb-2">
-                <input class="form-check-input" type="checkbox" value="Strata 1" id="jobEducation" name="jobEducation">
+                <input class="form-check-input" type="checkbox" value="Strata 1" id="jobEducation" name="jobEducation[]">
                 <label class="form-check-label" for="jobEducation">
                   Strata 1
                 </label>
               </div>
               <div class="form-check mb-2">
-                <input class="form-check-input" type="checkbox" value="Strata 3" id="jobEducation" name="jobEducation">
+                <input class="form-check-input" type="checkbox" value="Strata 3" id="jobEducation" name="jobEducation[]">
                 <label class="form-check-label" for="jobEducation">
                   Strata 3
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="Semua lulusan" id="jobEducation" name="jobEducation">
+                <input class="form-check-input" type="checkbox" value="Semua lulusan" id="jobEducation" name="jobEducation[]">
                 <label class="form-check-label" for="jobEducation">
                   Semua lulusan
                 </label>

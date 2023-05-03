@@ -20,8 +20,13 @@ Route::get('/', function () {
 // Route::get('/lowongan', function () {
 //   return view('application/jobs');
 // });
-Route::get('/lowongan', [Controllers\Lowongan::class, 'show']);
-Route::post('/lowongan', [Controllers\Lowongan::class, 'store']);
+Route::prefix('lowongan')->group( function() {
+  Route::get('/', [Controllers\Lowongan::class, 'show']);
+  Route::post('/', [Controllers\Lowongan::class, 'store']);
+  Route::post('/update', [Controllers\Lowongan::class, 'edit']);
+  Route::delete('/{postjob}', [Controllers\Lowongan::class, 'destroy'])->name('lowongan.destroy');
+});
+
 Route::get('/lowongan/detail', function () {
   return view('application/jobdetail');
 });

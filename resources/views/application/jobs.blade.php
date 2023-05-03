@@ -120,10 +120,20 @@
 </div>
 <?php
     var_dump($dataFacade[0]->name);
+    echo "<hr>";
+    var_dump($dataCustom[0]->location);
+    echo "<hr>";
 ?>
 @foreach ($data as $company)
     <p>Company Name : {{$company->name}}</p>
-    <p>Specialization : {{$company->field}}</p><hr>
+    <p>Specialization : {{$company->field}}</p>
+    <form action="{{ route('lowongan.destroy', $company->id) }}" method="POST">
+    @csrf 
+    @method('DELETE')
+
+    <button type="submit" class="btn btn-danger">Hapus !!!</button>
+    </form>
+    <hr>
 @endforeach
 
 @endsection
